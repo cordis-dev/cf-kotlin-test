@@ -1,30 +1,22 @@
-autoCorrect: false
-
-test-pattern:
-  active: true
-  patterns:
-    - '.*/test/.*'
-    - '.*/androidTest/.*'
-    - '.*Test.kt'
-    - '.*Spec.kt'
-    - '.*Spek.kt'
-  
 processors:
   active: false
 
-comments:
+console-reports:
   active: false
+
+comments:
+  active: true
 
 complexity:
   active: true
   ComplexMethod:
     active: true
-    threshold: 10
+    threshold: 0
 
 empty-blocks:
   active: true
   EmptyCatchBlock:
-    active: false
+    active: true
   EmptyClassBlock:
     active: true
   EmptyDefaultConstructor:
@@ -39,7 +31,7 @@ empty-blocks:
     active: true
   EmptyFunctionBlock:
     active: true
-    ignoreOverriddenFunctions: true
+    ignoreOverridden: true
   EmptyIfBlock:
     active: true
   EmptyInitBlock:
